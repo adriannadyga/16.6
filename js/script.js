@@ -21,10 +21,10 @@ function showCountriesList(resp) {
     countriesList.innerHTML = ''; //puste wartości po załadowaniu strony
     resp.forEach(function(item) { //iteruj po wszystkich elementach obiektu i zapisz jako argument w funkcji
         var liEl = document.createElement('li'); // przypisz do zmiennej i stworz nowy element listy w ktorym bedą wyswietlane informacje o kraju
-        liEl.innerText = // wyswietl informacje z elementów obiektu na stronie
-        'Region: ' + item.region + 
-        ' Name: ' + item.name +
-        ' Capital: ' + item.capital 
+        liEl.innerHTML = // wyswietl informacje z elementów obiektu na stronie
+        'Region: ' + item.region + '<br>' +
+        'Name: ' + item.name + '<br>' +
+        'Capital: ' + item.capital 
         countriesList.appendChild(liEl); //dodaj element do listy
     });
 }
