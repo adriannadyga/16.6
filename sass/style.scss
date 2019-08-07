@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 4, 255));
+        h1 {
+            margin-bottom: 100px;
+            font-size: 70px;
+        }
+        button {
+            margin-bottom: 20px;
+            border: none;
+            background-color: rgb(16, 167, 16);
+            color: #ffffff;
+            text-transform: uppercase;
+            cursor: pointer;  
+            width: 240px;
+            height: 60px;
+            font-size: 16px;   
+            &:hover {
+            background-color: rgb(84, 167, 16);
+            }
+        } 
+        input {
+            width: 240px;
+            height: 60px;
+            font-size: 30px;
+        } 
+        h2 {
+            font-size: 40px;
+        }   
+        ul {
+            li {
+                margin-bottom: 10px;
+                font-size: 20px;
+                list-style-type: none;
+            }
+        }
+    }
+}
